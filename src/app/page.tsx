@@ -1,113 +1,208 @@
-import Image from 'next/image'
-
 export default function Home() {
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
-      <div className="z-10 max-w-5xl w-full items-center justify-between font-mono text-sm lg:flex">
-        <p className="fixed left-0 top-0 flex w-full justify-center border-b border-gray-300 bg-gradient-to-b from-zinc-200 pb-6 pt-8 backdrop-blur-2xl dark:border-neutral-800 dark:bg-zinc-800/30 dark:from-inherit lg:static lg:w-auto  lg:rounded-xl lg:border lg:bg-gray-200 lg:p-4 lg:dark:bg-zinc-800/30">
-          Get started by editing&nbsp;
-          <code className="font-mono font-bold">src/app/page.tsx</code>
-        </p>
-        <div className="fixed bottom-0 left-0 flex h-48 w-full items-end justify-center bg-gradient-to-t from-white via-white dark:from-black dark:via-black lg:static lg:h-auto lg:w-auto lg:bg-none">
-          <a
-            className="pointer-events-none flex place-items-center gap-2 p-8 lg:pointer-events-auto lg:p-0"
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{' '}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className="dark:invert"
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
+    <>
+      <div className="container">
+      <div className="overflow-x-auto">
+      <div className="prose" style={{paddingTop:100, paddingBottom:20}}><h1 className="text-accent">Top Games</h1></div>
+        {/* Temp Dummy Data Until CSV is imported to DB */}
+        <table className="table table-md">
+          <thead>
+            <tr>
+              <th>#</th> 
+              <th>Name</th> 
+              <th>Job</th> 
+              <th>company</th> 
+              <th>location</th> 
+              <th>Last Login</th> 
+              <th>Favorite Color</th>
+            </tr>
+          </thead> 
+          <tbody>
+            <tr>
+              <th>1</th> 
+              <td>Cy Ganderton</td> 
+              <td>Quality Control Specialist</td> 
+              <td>Littel, Schaden and Vandervort</td> 
+              <td>Canada</td> 
+              <td>12/16/2020</td> 
+              <td>Blue</td>
+            </tr>
+            <tr>
+              <th>2</th> 
+              <td>Hart Hagerty</td> 
+              <td>Desktop Support Technician</td> 
+              <td>Zemlak, Daniel and Leannon</td> 
+              <td>United States</td> 
+              <td>12/5/2020</td> 
+              <td>Purple</td>
+            </tr>
+            <tr>
+              <th>3</th> 
+              <td>Brice Swyre</td> 
+              <td>Tax Accountant</td> 
+              <td>Carroll Group</td> 
+              <td>China</td> 
+              <td>8/15/2020</td> 
+              <td>Red</td>
+            </tr>
+            <tr>
+              <th>4</th> 
+              <td>Marjy Ferencz</td> 
+              <td>Office Assistant I</td> 
+              <td>Rowe-Schoen</td> 
+              <td>Russia</td> 
+              <td>3/25/2021</td> 
+              <td>Crimson</td>
+            </tr>
+            <tr>
+              <th>5</th> 
+              <td>Yancy Tear</td> 
+              <td>Community Outreach Specialist</td> 
+              <td>Wyman-Ledner</td> 
+              <td>Brazil</td> 
+              <td>5/22/2020</td> 
+              <td>Indigo</td>
+            </tr>
+            <tr>
+              <th>6</th> 
+              <td>Irma Vasilik</td> 
+              <td>Editor</td> 
+              <td>Wiza, Bins and Emard</td> 
+              <td>Venezuela</td> 
+              <td>12/8/2020</td> 
+              <td>Purple</td>
+            </tr>
+            <tr>
+              <th>7</th> 
+              <td>Meghann Durtnal</td> 
+              <td>Staff Accountant IV</td> 
+              <td>Schuster-Schimmel</td> 
+              <td>Philippines</td> 
+              <td>2/17/2021</td> 
+              <td>Yellow</td>
+            </tr>
+            <tr>
+              <th>8</th> 
+              <td>Sammy Seston</td> 
+              <td>Accountant I</td> 
+              <td>O'Hara, Welch and Keebler</td> 
+              <td>Indonesia</td> 
+              <td>5/23/2020</td> 
+              <td>Crimson</td>
+            </tr>
+            <tr>
+              <th>9</th> 
+              <td>Lesya Tinham</td> 
+              <td>Safety Technician IV</td> 
+              <td>Turner-Kuhlman</td> 
+              <td>Philippines</td> 
+              <td>2/21/2021</td> 
+              <td>Maroon</td>
+            </tr>
+            <tr>
+              <th>10</th> 
+              <td>Zaneta Tewkesbury</td> 
+              <td>VP Marketing</td> 
+              <td>Sauer LLC</td> 
+              <td>Chad</td> 
+              <td>6/23/2020</td> 
+              <td>Green</td>
+            </tr>
+            <tr>
+              <th>11</th> 
+              <td>Andy Tipple</td> 
+              <td>Librarian</td> 
+              <td>Hilpert Group</td> 
+              <td>Poland</td> 
+              <td>7/9/2020</td> 
+              <td>Indigo</td>
+            </tr>
+            <tr>
+              <th>12</th> 
+              <td>Sophi Biles</td> 
+              <td>Recruiting Manager</td> 
+              <td>Gutmann Inc</td> 
+              <td>Indonesia</td> 
+              <td>2/12/2021</td> 
+              <td>Maroon</td>
+            </tr>
+            <tr>
+              <th>13</th> 
+              <td>Florida Garces</td> 
+              <td>Web Developer IV</td> 
+              <td>Gaylord, Pacocha and Baumbach</td> 
+              <td>Poland</td> 
+              <td>5/31/2020</td> 
+              <td>Purple</td>
+            </tr>
+            <tr>
+              <th>14</th> 
+              <td>Maribeth Popping</td> 
+              <td>Analyst Programmer</td> 
+              <td>Deckow-Pouros</td> 
+              <td>Portugal</td> 
+              <td>4/27/2021</td> 
+              <td>Aquamarine</td>
+            </tr>
+            <tr>
+              <th>15</th> 
+              <td>Moritz Dryburgh</td> 
+              <td>Dental Hygienist</td> 
+              <td>Schiller, Cole and Hackett</td> 
+              <td>Sri Lanka</td> 
+              <td>8/8/2020</td> 
+              <td>Crimson</td>
+            </tr>
+            <tr>
+              <th>16</th> 
+              <td>Reid Semiras</td> 
+              <td>Teacher</td> 
+              <td>Sporer, Sipes and Rogahn</td> 
+              <td>Poland</td> 
+              <td>7/30/2020</td> 
+              <td>Green</td>
+            </tr>
+            <tr>
+              <th>17</th> 
+              <td>Alec Lethby</td> 
+              <td>Teacher</td> 
+              <td>Reichel, Glover and Hamill</td> 
+              <td>China</td> 
+              <td>2/28/2021</td> 
+              <td>Khaki</td>
+            </tr>
+            <tr>
+              <th>18</th> 
+              <td>Aland Wilber</td> 
+              <td>Quality Control Specialist</td> 
+              <td>Kshlerin, Rogahn and Swaniawski</td> 
+              <td>Czech Republic</td> 
+              <td>9/29/2020</td> 
+              <td>Purple</td>
+            </tr>
+            <tr>
+              <th>19</th> 
+              <td>Teddie Duerden</td> 
+              <td>Staff Accountant III</td> 
+              <td>Pouros, Ullrich and Windler</td> 
+              <td>France</td> 
+              <td>10/27/2020</td> 
+              <td>Aquamarine</td>
+            </tr>
+            <tr>
+              <th>20</th> 
+              <td>Lorelei Blackstone</td> 
+              <td>Data Coordiator</td> 
+              <td>Witting, Kutch and Greenfelder</td> 
+              <td>Kazakhstan</td> 
+              <td>6/3/2020</td> 
+              <td>Red</td>
+            </tr>
+          </tbody> 
+        </table>
       </div>
-
-      <div className="relative flex place-items-center before:absolute before:h-[300px] before:w-[480px] before:-translate-x-1/2 before:rounded-full before:bg-gradient-radial before:from-white before:to-transparent before:blur-2xl before:content-[''] after:absolute after:-z-20 after:h-[180px] after:w-[240px] after:translate-x-1/3 after:bg-gradient-conic after:from-sky-200 after:via-blue-200 after:blur-2xl after:content-[''] before:dark:bg-gradient-to-br before:dark:from-transparent before:dark:to-blue-700 before:dark:opacity-10 after:dark:from-sky-900 after:dark:via-[#0141ff] after:dark:opacity-40 before:lg:h-[360px] z-[-1]">
-        <Image
-          className="relative dark:drop-shadow-[0_0_0.3rem_#ffffff70] dark:invert"
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
+      <p>Data last updated Dec. 22nd 2020, courtesy of <a href="https://github.com/trung-hn/video-game-encyclopedia">trung-hn</a></p>
       </div>
-
-      <div className="mb-32 grid text-center lg:max-w-5xl lg:w-full lg:mb-0 lg:grid-cols-4 lg:text-left">
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Docs{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Find in-depth information about Next.js features and API.
-          </p>
-        </a>
-
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template-tw&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Learn{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Learn about Next.js in an interactive course with&nbsp;quizzes!
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Templates{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Explore the Next.js 13 playground.
-          </p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className="group rounded-lg border border-transparent px-5 py-4 transition-colors hover:border-gray-300 hover:bg-gray-100 hover:dark:border-neutral-700 hover:dark:bg-neutral-800/30"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2 className={`mb-3 text-2xl font-semibold`}>
-            Deploy{' '}
-            <span className="inline-block transition-transform group-hover:translate-x-1 motion-reduce:transform-none">
-              -&gt;
-            </span>
-          </h2>
-          <p className={`m-0 max-w-[30ch] text-sm opacity-50`}>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+    </>
   )
 }
