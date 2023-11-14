@@ -14,19 +14,19 @@ export const options: NextAuthOptions = {
                 username: {
                     label: "Username:",
                     type: "text",
-                    placeholder: "username"
+                    placeholder: "Please use the OAuth options above."
                 },
                 password:{
                     label: "Password:",
                     type: "password",
-                    placeholder: "password"
+                    placeholder: "Contact admin for credentials."
                 }
             },
             async authorize(credentials) {
-                //This is where you need to retrive user data
-                //to verify with credentials
-                // Check the next-auth docs under config -> provider -> credentials
-                const user = {id:"32", name: "dave", password: "auth"}
+                // This is where you need to retrive user data to verify with credentials
+                // See docs for more info: 
+                // https://next-auth.js.org/providers/credentials
+                const user = {id:"01", name: "jason", password: "auth"}
                 if(credentials?.username === user.name && credentials?.password === user.password){
                     return user
                 }else{
@@ -37,7 +37,8 @@ export const options: NextAuthOptions = {
     ],
 
     /*
-    This is where custom signin pages would go, but  we will be using NextAuth defaults
+    This is where custom signin pages would go, but we will be using NextAuth defaults
+    NextAuth.js automatically creates simple, unbranded authentication pages for handling Sign in, Sign out, Email Verification and displaying error messages.
     pages: {
         signIn: "/signin"
     }

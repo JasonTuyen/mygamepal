@@ -26,6 +26,7 @@ export default async function Navbar(){
           <div className="flex-none">
             <ul className="menu menu-horizontal px-1">
               <li><a href="/favorites">Favorites</a></li>
+              {/*<li><a href="/register">Register</a></li>*/}
               <li><a href="/api/auth/signin">Sign In</a></li>
             </ul>
           </div>
